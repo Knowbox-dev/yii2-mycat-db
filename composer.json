@@ -1,0 +1,20 @@
+{
+    "name": "yii2mycatdb/yii2mycatdb",
+    "description": "yii2",
+    "type": "composer-plugin",
+    "require": {
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "heaviii",
+            "email": "lihw@knowbox.cn"
+        }
+    ],
+    "minimum-stability": "dev",
+    "autoload":{
+         "psr-4":{
+              "Kmowbox\\Mycat\\":"src/MycatDb"
+         }
+    }
+}
