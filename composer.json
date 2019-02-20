@@ -1,7 +1,7 @@
 {
     "name": "knowbox/yii2-mycat-db",
     "description": "yii2",
-    "type": "composer-plugin",
+    "type": "library",
     "require": {
     },
     "license": "MIT",
