@@ -1,5 +1,5 @@
 {
-    "name": "yii2mycatdb/yii2mycatdb",
+    "name": "knowbox/yii2-mycat-db",
     "description": "yii2",
     "type": "composer-plugin",
     "require": {
