@@ -20,7 +20,7 @@ class Command extends \yii\db\Command
     public function getRawSql()
     {
         if (empty($this->params)) {
-            return $this->getTraceIdSql($this->_sql);
+            return $this->getTraceIdSql($this->getSql());
         }
         $params = [];
         foreach ($this->params as $name => $value) {
@@ -38,10 +38,10 @@ class Command extends \yii\db\Command
             }
         }
         if (!isset($params[1])) {
-            return $this->getTraceIdSql(strtr($this->_sql, $params));
+            return $this->getTraceIdSql(strtr($this->getSql(), $params));
         }
         $sql = '';
-        foreach (explode('?', $this->_sql) as $i => $part) {
+        foreach (explode('?', $this->getSql()) as $i => $part) {
             $sql .= (isset($params[$i]) ? $params[$i] : '') . $part;
         }
         return $this->getTraceIdSql($sql);
