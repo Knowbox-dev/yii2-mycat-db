@@ -6,7 +6,7 @@
  * Time: 10:26 AM
  */
 
-namespace Kmowbox\Mycat;
+namespace Knowbox\Mycat;
 
 
 class Command extends \yii\db\Command

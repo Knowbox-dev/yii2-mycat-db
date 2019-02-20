@@ -1,6 +1,6 @@
 <?php
 
-namespace Kmowbox\Mycat;
+namespace Knowbox\Mycat;
 
 /**
  * Created by PhpStorm.
@@ -10,6 +10,6 @@ namespace Kmowbox\Mycat;
  */
 class Connection extends \yii\db\Connection
 {
-    public $commandClass = 'psservice\libs\yii2\Command';
+    public $commandClass = 'Knowbox\Mycat\Command';
 
 }
